@@ -1,6 +1,6 @@
 ---
 title: "IT Education"
-date: 2020-02-09
+date: 2020-02-09T17:00:43-05:00
 draft: false
 showFullContent: false
 categories: ["Education", "IT"]
