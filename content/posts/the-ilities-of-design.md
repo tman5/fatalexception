@@ -1,5 +1,5 @@
 ---
-title: "The 'ilities' of design"
+title: "The '-ilities' of Design"
 date: 2020-01-17T17:00:43-05:00
 draft: false
 showFullContent: false
@@ -13,7 +13,9 @@ I cannot take credit for this, but I wanted to put it out there for all to see a
 - Usability
 - Availability
 - Security
-- Availability
+- Adaptability
 - Scalability
 
-Now I want you to rank them for your organization. 1-10. 
+Now I want you to rank them for your organization. 1-10. You may be surprised. Every organization will be slightly different but I think there are trends. Doing this exercise every so often helps put priorities in perspective. I think generally that you will find a couple of trends:
+- Security is usually near the middle
+- Availability, reliability and stability are usually near the top. I would argue that availability should be higher. Point and case if a host dies (loss of reliability), you can rapidly recover thanks to VMware technologies, so maybe reliability shouldn't be that high.
