@@ -1,4 +1,4 @@
 [submodule "themes/terminal"]
 	path = themes/terminal
 	url = "https://github.com/tman5/hugo-theme-terminal.git"
-	brand = master
+	branch = master
