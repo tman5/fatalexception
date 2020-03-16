@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Fatal Exception</title>
+    <link>/posts/</link>
+    <description>Recent content in Posts on Fatal Exception</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 09 Mar 2020 17:00:43 -0500</lastBuildDate>
+    
+	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Skyline Federated Authentication</title>
+      <link>/posts/skyline-federation/</link>
+      <pubDate>Mon, 09 Mar 2020 17:00:43 -0500</pubDate>
+      
+      <guid>/posts/skyline-federation/</guid>
+      <description>I want to post this because I&#39;ve found the documentation and steps very unclear from VMware in regards to this. Say your security policy requires federated identities. Put simply you CANNOT just use a VMware account you create in the cloud; you MUST use your on-prem credentials (we&#39;ll use AD in this case). So how do you do that? Well it&#39;s a combination of VMware Identity Manager Connector and a VMware Identity Manager* tenant in the cloud.</description>
+    </item>
+    
+    <item>
+      <title>IT Education</title>
+      <link>/posts/it-education-part1/</link>
+      <pubDate>Sun, 09 Feb 2020 17:00:43 -0500</pubDate>
+      
+      <guid>/posts/it-education-part1/</guid>
+      <description>What is better? Theory or practice in learning IT? I&#39;d argue both. When I teach I try to blend both. I think where people get hung up is on too much theory. Don&#39;t get me wrong, I&#39;ve seen plenty of students and working professionals have no theory and sometimes it hurts. When you start to ask deep questions or are required to articulate, without the deep theory you can falter. It can come in handy in troubleshooting, mainly from a critical thinking aspect.</description>
+    </item>
+    
+    <item>
+      <title>The &#39;-ilities&#39; of Design</title>
+      <link>/posts/the-ilities-of-design/</link>
+      <pubDate>Fri, 17 Jan 2020 17:00:43 -0500</pubDate>
+      
+      <guid>/posts/the-ilities-of-design/</guid>
+      <description>I cannot take credit for this, but I wanted to put it out there for all to see and understand. It originally was shown to me by Jayson Block (VCDX). There are key areas that go into desining IT systems. We probably hear them all the time - realiblity, stability, etc. Let&#39;s outline them here. This specifically can relate to VMware in this case. There are a number of academic articles discussing engineering ilities but I thought it useful here to focus on VMware.</description>
+    </item>
+    
+    <item>
+      <title>VMware Tools on Server 2012 Update Issues</title>
+      <link>/posts/2012-tools/</link>
+      <pubDate>Fri, 17 Jan 2020 17:00:43 -0500</pubDate>
+      
+      <guid>/posts/2012-tools/</guid>
+      <description>There seems to be issues with auto-upgrading VMware tools to the newest version on some 2012 instances. The tools will install but will crash constantly. Trouble is it&#39;s not all of them. While I haven&#39;t been able to pinpoint the issue I have found a workaround. If you uninstall the tools with setup /c and then remove ALL files from the VMware Tools directory under Program Files, then a clean install will succeed.</description>
+    </item>
+    
+  </channel>
+</rss>

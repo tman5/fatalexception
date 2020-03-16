@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Design on Fatal Exception</title>
+    <link>/tags/design/</link>
+    <description>Recent content in Design on Fatal Exception</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 17 Jan 2020 17:00:43 -0500</lastBuildDate>
+    
+	<atom:link href="/tags/design/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The &#39;-ilities&#39; of Design</title>
+      <link>/posts/the-ilities-of-design/</link>
+      <pubDate>Fri, 17 Jan 2020 17:00:43 -0500</pubDate>
+      
+      <guid>/posts/the-ilities-of-design/</guid>
+      <description>I cannot take credit for this, but I wanted to put it out there for all to see and understand. It originally was shown to me by Jayson Block (VCDX). There are key areas that go into desining IT systems. We probably hear them all the time - realiblity, stability, etc. Let&#39;s outline them here. This specifically can relate to VMware in this case. There are a number of academic articles discussing engineering ilities but I thought it useful here to focus on VMware.</description>
+    </item>
+    
+  </channel>
+</rss>

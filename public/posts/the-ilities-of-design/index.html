@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>The &#39;-ilities&#39; of Design :: Fatal Exception — Musings of a SysAdmin</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="I cannot take credit for this, but I wanted to put it out there for all to see and understand. It originally was shown to me by Jayson Block (VCDX). There are key areas that go into desining IT systems. We probably hear them all the time - realiblity, stability, etc. Let&#39;s outline them here. This specifically can relate to VMware in this case. There are a number of academic articles discussing engineering ilities but I thought it useful here to focus on VMware."/>
+<meta name="keywords" content=""/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="/posts/the-ilities-of-design/" />
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/green.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+<link rel="shortcut icon" href="/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="The &#39;-ilities&#39; of Design :: Fatal Exception — Musings of a SysAdmin" />
+<meta name="twitter:description" content="I cannot take credit for this, but I wanted to put it out there for all to see and understand. It originally was shown to me by Jayson Block (VCDX). There are key areas that go into desining IT systems. We probably hear them all the time - realiblity, stability, etc. Let&#39;s outline them here. This specifically can relate to VMware in this case. There are a number of academic articles discussing engineering ilities but I thought it useful here to focus on VMware." />
+<meta name="twitter:site" content="/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="The &#39;-ilities&#39; of Design :: Fatal Exception — Musings of a SysAdmin">
+<meta property="og:description" content="I cannot take credit for this, but I wanted to put it out there for all to see and understand. It originally was shown to me by Jayson Block (VCDX). There are key areas that go into desining IT systems. We probably hear them all the time - realiblity, stability, etc. Let&#39;s outline them here. This specifically can relate to VMware in this case. There are a number of academic articles discussing engineering ilities but I thought it useful here to focus on VMware." />
+<meta property="og:url" content="/posts/the-ilities-of-design/" />
+<meta property="og:site_name" content="The &#39;-ilities&#39; of Design" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2020-01-17 17:00:43 -0500 EST" />
+
+
+
+
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-58624322-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-58624322-2');
+</script>
+
+</head>
+<body class="">
+
+
+<div class="container full headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Fatal Exception
+  </div>
+</a>
+
+      
+    </div>
+    <div class="menu-trigger">menu</div>
+    <a href="https://www.github.com/tman5" target="_blank"><image src="/img/github.png" alt="GitHub" style="margin-right:5px; width:36px;"/></a>
+    <a href="https://twitter.com/nothvice" target="_blank"><image src="/img/twitter.png" alt="Twitter" style="width:36px; margin-right:5px;"/></a>
+    <a href="mailto:travis@travisscotto.com"><image src="/img/mail.png" alt="Email" style="width:36px; margin-right:5px;"/></a>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/posts/the-ilities-of-design/">The &lsquo;-ilities&rsquo; of Design</a></h1>
+  <div class="post-meta">
+      
+    <span class="post-date">
+      2020-01-17
+    </span>
+    
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="/tags/vmware/">VMware</a>&nbsp;
+    
+    #<a href="/tags/design/">Design</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  <div class="post-content">
+    <p>I cannot take credit for this, but I wanted to put it out there for all to see and understand. It originally was shown to me by Jayson Block (VCDX). There are key areas that go into desining IT systems. We probably hear them all the time - realiblity, stability, etc. Let's outline them here. This specifically can relate to VMware in this case. There are a number of academic articles discussing engineering ilities but I thought it useful here to focus on VMware.</p>
+<ul>
+<li>Reliability</li>
+<li>Stability</li>
+<li>Usability</li>
+<li>Availability</li>
+<li>Security</li>
+<li>Adaptability</li>
+<li>Scalability</li>
+</ul>
+<p>Now I want you to rank them for your organization. 1-10. You may be surprised. Every organization will be slightly different but I think there are trends. Doing this exercise every so often helps put priorities in perspective. I think generally that you will find a couple of trends:</p>
+<ul>
+<li>Security is usually near the middle</li>
+<li>Availability, reliability and stability are usually near the top. I would argue that availability should be higher. Point and case if a host dies (loss of reliability), you can rapidly recover thanks to VMware technologies, so maybe reliability shouldn't be that high.</li>
+<li>Usability may be low. This may be because a lot of these systems are just infrastructure and not user facing, but what if it was user facing?</li>
+<li>Scalability is often put near the top as well and it is very important in this phase. I often feel this gets missed and later we have to figure out how to scale a system that was designed for a much smaller workload.</li>
+</ul>
+<p>I want to keep coming back to the ideas in this post. For now this is a good start when thinking about design.</p>
+
+  </div>
+  
+  <div class="pagination">
+    <div class="pagination__title">
+      <span
+        class="pagination__title-h">Read other posts</span>
+      <hr />
+    </div>
+    <div class="pagination__buttons">
+      
+      <span class="button previous">
+        <a href="/posts/it-education-part1/">
+          <span class="button__icon">←</span>
+          <span class="button__text">IT Education</span>
+        </a>
+      </span>
+      
+      
+      <span class="button next">
+        <a href="/posts/2012-tools/">
+          <span class="button__text">VMware Tools on Server 2012 Update Issues</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
+      
+    </div>
+  </div>
+  
+
+  
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2020 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

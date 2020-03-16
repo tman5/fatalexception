@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Troubleshooting on Fatal Exception</title>
+    <link>/tags/troubleshooting/</link>
+    <description>Recent content in Troubleshooting on Fatal Exception</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 17 Jan 2020 17:00:43 -0500</lastBuildDate>
+    
+	<atom:link href="/tags/troubleshooting/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>VMware Tools on Server 2012 Update Issues</title>
+      <link>/posts/2012-tools/</link>
+      <pubDate>Fri, 17 Jan 2020 17:00:43 -0500</pubDate>
+      
+      <guid>/posts/2012-tools/</guid>
+      <description>There seems to be issues with auto-upgrading VMware tools to the newest version on some 2012 instances. The tools will install but will crash constantly. Trouble is it&#39;s not all of them. While I haven&#39;t been able to pinpoint the issue I have found a workaround. If you uninstall the tools with setup /c and then remove ALL files from the VMware Tools directory under Program Files, then a clean install will succeed.</description>
+    </item>
+    
+  </channel>
+</rss>
