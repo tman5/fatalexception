@@ -1,8 +1,8 @@
 ---
 title: "Storage Issues!"
-date: 2020-03-09T17:00:43-05:00
-draft: true
+date: 2020-03-23T17:00:43-05:00
+draft: false
 showFullContent: false
 tags: ["VMware","storage", "stability", "freeze", "support"]
 ---
-Storage issues! One thing that has baffled me (and VMware GSS it seems) is why when a host looses it storage does it sometimes just go unresponsive on the management side?
+Storage issues! One thing that has baffled me (and VMware GSS it seems) is why when a host looses it storage does it sometimes just goes unresponsive on the management side? I've seen this multiple times with multiple storage vendors. Say an APD event occurs. Most of the time the host recovers after the storage comes back, but sometimes it doesn't. This results in a host that is unresponsive to management commands, even the console. Sometimes I've gotten lucky and the host will briefly become responsive and we can vMotion or try to restart services but it's very hit and miss. The VMs however stay functioning. Trouble is vCenter doesn't see the host as connected and thus no vMotion is available. This means you have to do a hard shutdown and take the brief outage while HA restarts the VMs. I've seen this on multiple versions of ESXi, HBAs, firmwares, drivers, etc. Still no true resolution. I was even told that this is just "sometimes what happens". I wish that weren't the case. Now, this situation is rare where you have APD events (at least I hope it is) but I really hope we can find a cause/resolution in the future. It just seems that the host just overwhelms its management with storage events and eventually it just locks up. Very strange. 
