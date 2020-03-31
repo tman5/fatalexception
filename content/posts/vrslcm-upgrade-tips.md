@@ -1,0 +1,8 @@
+---
+title: "vRealize Suite Lifecycle Manager Upgrade Tips"
+date: 2020-03-31T17:00:43-05:00
+draft: false
+showFullContent: false
+tags: ["VMware","vRSLCM", "vRealize", "vIDM", "Identity Manager", "Upgrade", "8.0", "Life Cycle"]
+---
+To upgrade to the newest version of vRSLCM (super long acronym!) it's really a migration. There is a tool you use to migrate from the older 2.x version to the 8.x version. They just skipped a bunch of versions in between... the wizard itself is pretty easy. The one piece that may trip you up is it asks to setup a VMware Identity Manager instance. It will not let you proceed without doing so. It's a new requirement apparently. Now I haven't actually logged into vRSLCM with Identity Manager yet, but it should work. I bring this up because the documentation is fuzzy here. Also because Identity Manager was renamed Workspace One Access, but not everywhere refers to it as this yet. After digging and chatting with support and TAM, you DO NOT need a Workspace One license to use this product for simply doing authentication with infrastructure products like vRealize Network Insight, vROPS and others. It can be confusing because it's now lumped with Workspace One products and Identity Manager is still out there AND it even has a place for a license key! I'm assuming the key is if you actually use it for Workspace One (but don't hold me to this, ours is still working without issue). Short of the story is, don't panic with the new requirement for Identity Manager for Lifecycle Manager. Proceed with the install and use it or don't use it. It does not appear to matter (though I can say the using Workspace One Access is a convenient place to manager auth). 
