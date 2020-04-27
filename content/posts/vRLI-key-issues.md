@@ -15,6 +15,7 @@ In vRealize Log Insight 8.0, the truststore is located here:
 
 To list the contents of the truststore, run keytool using the following command:
 ```/usr/java/jre-vmware/bin/keytool -list -keystore cacerts```
+
 If an error is encountered, the truststore is corrupt and needs to be replaced.
 
 A corrupt truststore can be replaced by using a copy from a healthy vRealize Log Insight node from the same cluster, the old SLES partition after upgrading to vRealize Log Insight 8.0. 
@@ -26,10 +27,10 @@ Methods:
 - Copy the old trust-store from the old SLES partition from the 4.8 vRealize Log Insight build to the vRealize Log Insight 8.0 instance on the Photon partition:
 1. Log into the affected node as root
 2. Enter the following commands to mount the old partition and copy over the old truststore:
-```mkdir test
-mount /dev/sda3/ test
-cp test/usr/java/jre1.8.0_202-amd64/lib/security/cacerts /usr/java/jre-vmware/lib/security/cacerts```
+```mkdir test```
+```mount /dev/sda3/ test```
+```cp test/usr/java/jre1.8.0_202-amd64/lib/security/cacerts``` ```/usr/java/jre-vmware/lib/security/cacerts```
 3. Run the following commands to unmount the old partition and delete the recently mounted directory:
-```umount /dev/sda3
-rm -r test```
+```umount /dev/sda3```
+```rm -r test```
 
