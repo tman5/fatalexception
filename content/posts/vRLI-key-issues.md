@@ -26,8 +26,8 @@ Methods:
 ```/usr/java/jre-vmware/lib/security/cacerts```
 
 - Copy the old trust-store from the old SLES partition from the 4.8 vRealize Log Insight build to the vRealize Log Insight 8.0 instance on the Photon partition:
-	1. Log into the affected node as root
-	2. Enter the following commands to mount the old partition and copy over the old truststore:
+1. Log into the affected node as root
+2. Enter the following commands to mount the old partition and copy over the old truststore:
 
 	```mkdir test```
 
@@ -36,7 +36,8 @@ Methods:
 	```cp test/usr/java/jre1.8.0_202-amd64/lib/security/cacerts```
 
 	```/usr/java/jre-vmware/lib/security/cacerts```
-	3. Run the following commands to unmount the old partition and delete the recently mounted directory:
+	
+3. Run the following commands to unmount the old partition and delete the recently mounted directory:
 
 ```umount /dev/sda3```
 
