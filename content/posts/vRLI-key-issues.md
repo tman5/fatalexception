@@ -31,9 +31,9 @@ Methods:
 
 		```mkdir test```
 
-		```mount /dev/sda3/ test```
+		```mount /dev/sda3/ test``` - NOTE mine was NOT sda3, so yours may vary slightly
 
-		```cp test/usr/java/jre1.8.0_202-amd64/lib/security/cacerts```
+		```cp test/usr/java/jre1.8.0_202-amd64/lib/security/cacerts``` - NOTE I had to change the Java version for mine as it varied slightly. 
 
 		```/usr/java/jre-vmware/lib/security/cacerts```
 	
