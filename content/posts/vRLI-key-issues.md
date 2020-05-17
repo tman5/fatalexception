@@ -1,9 +1,9 @@
 ---
-title: "vRLI Key Error"
+title: "vRealize Log Insight Key Error"
 date: 2020-04-27T17:00:43-05:00
 draft: false
 showFullContent: false
-tags: ["VMware","vRLI", "Key", "Issue", "Upgrade", "Java", "SSL"]
+tags: ["VMware","vRLI", "Key", "Issue", "Upgrade", "Java", "SSL", "Log Insight", "vRealize"]
 ---
 
 Upgrade your vRLI and find issues connecting to AD or to your vSphere? When you try to connect do you find some sort of key error when trying to accept the SSL certificate? Fear not! This fairly easy to fix but there isn't a lot of info online about this. I got these steps from VMware and pasted them here exactly. In the future supposedly there will be an article published about this, but until then here we go. I'll update once it becomes available. Just know I can't take credit for these steps but they were IMMENSLY helpful. 
